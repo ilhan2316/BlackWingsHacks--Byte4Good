@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+    <head>
+        <title>KeepUp</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <style>
+        html, body{
+            color: #564BD1;
+            margin:0;
+            padding:0;
+            font-family: 'Rubik', sans-serif;
+            background-color:#D9D6FE;
+            text-align: center;
+        }
+
+        #logo{
+            font-size: 48px;
+            color:#FDEBAB;
+            -webkit-text-stroke: 1px #564BD1;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: right;
+        }
+
+        .container{
+            display:flex;
+            flex-direction:column;
+            max-width:600px;
+            margin: 30px auto;
+        }
+
+        img {
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        input {
+            color: #B6B4D4;
+            background-color: #f1f6ff;
+            border: 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px; 
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            margin: 10px 0;
+        }
+
+        button {
+            color: #564BD1;
+            background-color: #FDEBAB;
+            border: 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-image {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%;
+            margin-right: 20px; 
+        }
+        .profile-info {
+            flex: 1;
+        }
+
+        #logo{
+            font-size: 48px;
+            color:#FDEBAB;
+            -webkit-text-stroke: 1px #564BD1;
+        }
+
+        .outer-card-container{
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 25px;
+            padding: 15px;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icon {
+            font-size: 24px; 
+            color: #333; 
+            cursor: pointer; 
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="outer-card-container" id="leaderboard">
+                <h1 id="logo">LEADERBOARD</h1>
+            </div>
+            <div class="outer-card-container">
+                <div class="icon-container">
+                    <a href="citylink.html"><div class="icon">&#128240;</div></a>
+                    <a href="homepage.html"><div class="icon">&#127968;</div></a>
+                    <a href="leaderboard.html"><div class="icon">&#128231;</div></a>
+                </div>            
+            </div>
+
+            <script>
+                let leaderboardData = {
+                    1: {
+                        "name": "Michelle",
+                        "points": 10000
+                    },
+                    2: {
+                        "name": "Dawn",
+                        "points": 9605
+                    },
+                    3: {
+                        "name": "Nicole",
+                        "points": 9600
+                    },
+                    4: {
+                        "name": "Raja",
+                        "points": 7000
+                    },
+                    5: {
+                        "name": "Meghan",
+                        "points": 6500
+                    }
+                };
+
+                for(let i = 1; i <= Object.keys(leaderboardData).length; i++){
+                    var button = document.createElement("button");
+                    var bold = document.createElement("b");
+                    var text = document.createTextNode("#" + i.toString() + " \u2003\u2003\u2003\u2003\u2003\u2003 " + leaderboardData[i]["name"] + " \u2003\u2003\u2003\u2003 ⭐ " + leaderboardData[i]["points"] + " points");
+                    
+                    bold.appendChild(text);
+                    
+                    button.appendChild(bold);
+            
+                    document.getElementById("leaderboard").appendChild(button);
+                }
+            </script>
+
+            <script src="index.js" type="module"></script>
+        </div>
+    </body>
+</html>

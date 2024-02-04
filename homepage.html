@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <title>KeepUp</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <style>
+        html, body{
+            color: #564BD1;
+            margin:0;
+            padding:0;
+            font-family: 'Rubik', sans-serif;
+            background-color:#D9D6FE;
+            text-align: center;
+        }
+
+        #logo{
+            font-size: 48px;
+            color:#FDEBAB;
+            -webkit-text-stroke: 1px #564BD1;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: right;
+        }
+
+        .container{
+            display:flex;
+            flex-direction:column;
+            max-width:600px;
+            margin: 30px auto;
+        }
+
+        img {
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        input {
+            color: #B6B4D4;
+            background-color: #f1f6ff;
+            border: 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px; 
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            margin: 10px 0;
+        }
+
+        button {
+            color: #564BD1;
+            background-color: #FFFFFF;
+            border: 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-image {
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            border-radius: 50%;
+            margin-right: 20px; /* Adjust spacing between image and text */
+        }
+        .profile-info {
+            flex: 1;
+        }
+
+        #logo{
+            font-size: 48px;
+            color:#FDEBAB;
+            -webkit-text-stroke: 1px #564BD1;
+        }
+
+        .outer-card-container{
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 25px;
+            padding: 15px;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icon {
+            font-size: 24px; /* Adjust icon size as needed */
+            color: #333; /* Adjust icon color as needed */
+            cursor: pointer; /* Optional: Add cursor pointer on hover */
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <b><p><a href="index.html">Log out</a></p></b>
+            <div class="profile-container">
+                <img class="profile-image" src="person.png" alt="Person Image">                
+                <div class="profile-info">
+                    <h1 id="logo">Andrea</h1>
+                    <b><h1>Welcome to KeepUp!</h1></b>
+                </div>
+            </div>
+            <button><b>⭐ 1,300 points</b></button>
+            
+            <div class="outer-card-container">
+                <h1>City News</h1>
+                <div class="card-container"></div>
+    
+                <h1>Events</h1>
+                <div class="card-container"></div>
+    
+                <h1>Volunteer</h1>
+                <div class="card-container"></div>
+            </div>
+
+            <div class="outer-card-container">
+                <div class="icon-container">
+                    <a href="citylink.html"><div class="icon">&#128240;</div></a>
+                    <a href="homepage.html"><div class="icon">&#127968;</div></a>
+                    <a href="leaderboard.html"><div class="icon">&#128231;</div></a>
+                </div>            
+            </div>
+
+            <script src="index.js" type="module"></script>
+        </div>
+    </body>
+</html>

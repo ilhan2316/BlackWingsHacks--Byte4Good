@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <title>KeepUp</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <style>
+        html, body{
+            color: #564BD1;
+            margin:0;
+            padding:0;
+            font-family: 'Rubik', sans-serif;
+            background-color:#ffffff;
+            text-align: center;
+        }
+
+        #logo{
+            font-size: 48px;
+            color:#FDEBAB;
+            -webkit-text-stroke: 1px #564BD1;
+            margin-bottom: 1%;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: right;
+        }
+
+        .container{
+            display:flex;
+            flex-direction:column;
+            max-width:600px;
+            margin: 30px auto;
+        }
+
+        img {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        #map {
+            border: 5px solid #5dff44;
+        }
+
+        button {
+            color: #564BD1;
+            background-color: #ffffff;
+            border: 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color:#D9D6FE;
+            border-radius: 8px;
+        }
+        .profile-image {
+            width: 120px; /* Adjust size as needed */
+            height: 120px; /* Adjust size as needed */
+            border-radius: 50%;
+            margin-right: 20px; /* Adjust spacing between image and text */
+        }
+        .profile-info {
+            flex: 1;
+        }
+
+        #logo{
+            font-size: 48px;
+            color:#FDEBAB;
+            -webkit-text-stroke: 1px #564BD1;
+        }
+
+        .outer-card-container{
+            margin-top: 10px;
+            background-color: #D9D6FE;
+            border-radius: 25px;
+            padding: 15px;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icon {
+            font-size: 24px; /* Adjust icon size as needed */
+            color: #333; /* Adjust icon color as needed */
+            cursor: pointer; /* Optional: Add cursor pointer on hover */
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="profile-container">
+                <img class="profile-image" src="person.png" alt="Person Image">                
+                <div class="profile-info">
+                    <h1 id="logo">Andrea</h1>
+                    <button><b>⭐ 1,300 points</b></button>
+                </div>
+            </div>
+            
+            <h1>Top Updates</h1>
+            <div class="card-container"></div>
+            
+            <h1>Report An Issue</h1>
+            
+            <a href="report.html"><img src="map.png" id="map"></a>
+
+            <div class="outer-card-container">
+                <div class="icon-container">
+                    <a href="citylink.html"><div class="icon">&#128240;</div></a>
+                    <a href="homepage.html"><div class="icon">&#127968;</div></a>
+                    <a href="leaderboard.html"><div class="icon">&#128231;</div></a>
+                </div>            
+            </div>
+
+            <script src="index.js" type="module"></script>
+        </div>
+    </body>
+</html>
