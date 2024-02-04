@@ -15,6 +15,7 @@ var volunteerRef = ref(database, "Volunteer");
 
 onValue(cityNewsRef, function(snapshot){
     let itemsArray = Object.values(snapshot.val());
+    let imgArray = ["guyincar.png"];
 
     for (let i = 0; i < itemsArray.length; i++){
         const card = document.createElement('div');
@@ -25,7 +26,7 @@ onValue(cityNewsRef, function(snapshot){
         // Set content and attributes
         descriptionParagraph.textContent = itemsArray[i]["Description"].length > 25 ? itemsArray[i]["Description"].substring(0, 25) + '...' : itemsArray[i]["Description"];
         timeSpan.textContent = itemsArray[i]["Date"];
-        image.src = "imageUrl";
+        image.src = imgArray[i];
 
         // Append elements to card
         card.appendChild(image); // Append image first
@@ -42,6 +43,7 @@ onValue(cityNewsRef, function(snapshot){
 
 onValue(eventsRef, function(snapshot){
     let itemsArray = Object.values(snapshot.val());
+    let imgArray = ["POOL.png", "skirt.png"];
 
     for (let i = 0; i < itemsArray.length; i++){
         const card = document.createElement('div');
@@ -52,7 +54,7 @@ onValue(eventsRef, function(snapshot){
         // Set content and attributes
         descriptionParagraph.textContent = itemsArray[i]["Description"].length > 25 ? itemsArray[i]["Description"].substring(0, 25) + '...' : itemsArray[i]["Description"];
         timeSpan.textContent = itemsArray[i]["Date"];
-        image.src = "imageUrl";
+        image.src = imgArray[i];
 
         // Append elements to card
         card.appendChild(image); // Append image first
@@ -69,6 +71,7 @@ onValue(eventsRef, function(snapshot){
 
 onValue(volunteerRef, function(snapshot){
     let itemsArray = Object.values(snapshot.val());
+    let imgArray = ["heart5k.png", "green.png"];
 
     for (let i = 0; i < itemsArray.length; i++){
         const card = document.createElement('div');
@@ -79,7 +82,7 @@ onValue(volunteerRef, function(snapshot){
         // Set content and attributes
         descriptionParagraph.textContent = itemsArray[i]["Description"].length > 25 ? itemsArray[i]["Description"].substring(0, 25) + '...' : itemsArray[i]["Description"];
         timeSpan.textContent = itemsArray[i]["Date"];
-        image.src = "imageUrl";
+        image.src = imgArray[i];
 
         // Append elements to card
         card.appendChild(image); // Append image first
