@@ -19,11 +19,16 @@
             font-size: 48px;
             color:#FDEBAB;
             -webkit-text-stroke: 1px #564BD1;
-            margin-bottom: 1%;
+        }
+
+        h3{
+            margin-top: 3%;
+            text-align: left;
         }
 
         h1{
             text-align: center;
+            margin:0;
         }
 
         p{
@@ -38,23 +43,40 @@
         }
 
         img {
-            width: 60%;
+            width: 70%;
             margin: 0 auto;
+            margin-top:1%;
         }
 
         #map {
             border: 5px solid #5dff44;
         }
 
+        input {
+            color: #B6B4D4;
+            background-color: #f1f6ff;
+            border: 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px; 
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            margin: 10px 0;
+        }
+
         button {
             color: #564BD1;
-            background-color: #ffffff;
+            background-color: #FDEBAB;
             border: 0;
             padding: 15px;
             border-radius: 8px;
             font-size: 20px;
             text-align: center;
+            width: 40%;
+            margin: auto;
+            margin-bottom: 2%;
         }
+
         .profile-container {
             display: flex;
             align-items: center;
@@ -62,12 +84,14 @@
             background-color:#D9D6FE;
             border-radius: 8px;
         }
+
         .profile-image {
-            width: 120px; /* Adjust size as needed */
-            height: 120px; /* Adjust size as needed */
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
             border-radius: 50%;
             margin-right: 20px; /* Adjust spacing between image and text */
         }
+
         .profile-info {
             flex: 1;
         }
@@ -90,29 +114,26 @@
             justify-content: space-between;
             align-items: center;
         }
+
         .icon {
             font-size: 24px; /* Adjust icon size as needed */
             color: #333; /* Adjust icon color as needed */
             cursor: pointer; /* Optional: Add cursor pointer on hover */
         }
-
     </style>
     <body>
         <div class="container">
-            <div class="profile-container">
-                <img class="profile-image" src="person.png" alt="Person Image">                
-                <div class="profile-info">
-                    <h1 id="logo">Andrea</h1>
-                    <button><b>⭐ 1,300 points</b></button>
-                </div>
-            </div>
             
-            <h1>Top Updates</h1>
-            <div class="card-container"></div>
-            
-            <h1>Report An Issue</h1>
-            
-            <a href="report.html"><img src="map.png" id="map"></a>
+            <h1>Summary</h1>
+            <img src="map.png" id="map">
+
+            <h3>Incident Type</h3>
+            <input type="text" id="input-field">
+
+            <h3>Description</h3>
+            <input type="text" id="input-field">
+
+            <a href="citylink.html"><button id="add-button"><b>Submit</b></button></a>
 
             <div class="outer-card-container">
                 <div class="icon-container">
