@@ -20,18 +20,21 @@ onValue(cityNewsRef, function(snapshot){
     for (let i = 0; i < itemsArray.length; i++){
         const card = document.createElement('div');
         const descriptionParagraph = document.createElement('p');
+        const address = document.createElement('p');
+        const time = document.createElement('p');
         const timeSpan = document.createElement('span');
         const image = document.createElement('img');
 
         // Set content and attributes
         descriptionParagraph.textContent = itemsArray[i]["Description"].length > 25 ? itemsArray[i]["Description"].substring(0, 25) + '...' : itemsArray[i]["Description"];
-        timeSpan.textContent = itemsArray[i]["Date"];
+        timeSpan.textContent = itemsArray[i]["Date"] + " " + itemsArray[i]["Time"];
         image.src = imgArray[i];
+        address.textContent = itemsArray[i]["Address"];
 
         // Append elements to card
         card.appendChild(image); // Append image first
         card.appendChild(descriptionParagraph);
-        card.appendChild(document.createElement('br')); // Add a line break
+        card.appendChild(address);
         card.appendChild(timeSpan);
 
         // Add class to card
@@ -48,18 +51,21 @@ onValue(eventsRef, function(snapshot){
     for (let i = 0; i < itemsArray.length; i++){
         const card = document.createElement('div');
         const descriptionParagraph = document.createElement('p');
+        const address = document.createElement('p');
+        const time = document.createElement('p');
         const timeSpan = document.createElement('span');
         const image = document.createElement('img');
 
         // Set content and attributes
         descriptionParagraph.textContent = itemsArray[i]["Description"].length > 25 ? itemsArray[i]["Description"].substring(0, 25) + '...' : itemsArray[i]["Description"];
-        timeSpan.textContent = itemsArray[i]["Date"];
+        timeSpan.textContent = itemsArray[i]["Date"] + " " + itemsArray[i]["Time"];
         image.src = imgArray[i];
+        address.textContent = itemsArray[i]["Address"];
 
         // Append elements to card
         card.appendChild(image); // Append image first
         card.appendChild(descriptionParagraph);
-        card.appendChild(document.createElement('br')); // Add a line break
+        card.appendChild(address);
         card.appendChild(timeSpan);
 
         // Add class to card
@@ -76,18 +82,21 @@ onValue(volunteerRef, function(snapshot){
     for (let i = 0; i < itemsArray.length; i++){
         const card = document.createElement('div');
         const descriptionParagraph = document.createElement('p');
+        const address = document.createElement('p');
+        const time = document.createElement('p');
         const timeSpan = document.createElement('span');
         const image = document.createElement('img');
 
         // Set content and attributes
         descriptionParagraph.textContent = itemsArray[i]["Description"].length > 25 ? itemsArray[i]["Description"].substring(0, 25) + '...' : itemsArray[i]["Description"];
-        timeSpan.textContent = itemsArray[i]["Date"];
+        timeSpan.textContent = itemsArray[i]["Date"] + " " + itemsArray[i]["Time"];
         image.src = imgArray[i];
+        address.textContent = itemsArray[i]["Address"];
 
         // Append elements to card
         card.appendChild(image); // Append image first
         card.appendChild(descriptionParagraph);
-        card.appendChild(document.createElement('br')); // Add a line break
+        card.appendChild(address);
         card.appendChild(timeSpan);
 
         // Add class to card
