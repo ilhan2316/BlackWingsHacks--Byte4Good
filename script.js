@@ -79,8 +79,12 @@ onValue(eventsRef, function(snapshot){
             // Toggle RSVP button text
             if (rsvpButton.textContent === 'RSVP') {
                 rsvpButton.textContent = 'Un-RSVP';
+                let pts = parseInt(document.getElementById("userpoints").textContent) + 25;
+                document.getElementById("userpoints").textContent = pts;
             } else {
                 rsvpButton.textContent = 'RSVP';
+                let pts = parseInt(document.getElementById("userpoints").textContent) - 25;
+                document.getElementById("userpoints").textContent = pts;
             }
         });
 
