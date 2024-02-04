@@ -10,16 +10,16 @@ KeepUp is a community-driven platform designed to enhance civic engagement and c
 The KeepUp website addresses the need for enhanced civic engagement by providing a comprehensive platform that empowers citizens to actively contribute to the betterment of their city and that can make users feel closer to their city as well as establish a sense of participation and collective impact.
 
 # Built with
+- Firebase Realtime Database
 - JavaScript
 - HTML
 - CSS
-- Firebase
 - Figma
+- VSCode
+- Git
   
 # Get Started
-1. Git clone the repo to your local machine
-2. Install Live Server plugin for VS Code
-3. Launch your Live Server to view the project
+Try out our app by heading to: https://polite-panda-50bb1b.netlify.app/ 
 
 # Usage
 The KeepUp platform is tailored for residents who are passionate about actively contributing to their community, seeking a stronger connection with their city, and desiring to make a positive impact through streamlined incident reporting, community engagement, and real-time information on local matters.
